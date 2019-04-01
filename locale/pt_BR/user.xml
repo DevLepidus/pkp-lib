@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/user.xml
   *
-  * Copyright (c) 2014-2019 Simon Fraser University
-  * Copyright (c) 2000-2019 John Willinsky
+  * Copyright (c) 2014-2018 Simon Fraser University
+  * Copyright (c) 2000-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Locale information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_(pt_BR)
   * Localization strings.
@@ -46,7 +46,7 @@
 	<message key="user.profile.form.profileImageInvalid">Formato ou tamanho de imagem inválido para o perfil. Formatos aceitos são .gif, .jpg, ou .png, e a imagem não pode exceder 150x150 pixels.</message>
 	<message key="user.login.accountDisabledWithReason">Sua conta foi desabilitada pelo seguinte motivo: {$reason}</message>
 	<message key="user.login.accountDisabled">Sua conta foi desativada. Entre em contato com o administrador para maiores informações.</message>
-	<message key="user.login.accountNotValidated">É necessário validar seu endereço de e-mail. Verifique sua caixa de correio eletrônico e siga as instruções na mensagem recebida. Caso não tenha recebido a mensagem, entre em contato com o administrador para suporte.</message>
+	<message key="user.login.accountNotValidated">Foi enviado um e-mail de confirmação para {$email}. Por favor, siga as instruções do e-mail para ativar a sua nova conta. Caso não tenha recebido a mensagem, verifique se está em sua caixa de spam.</message>
 	<message key="user.login.activate">Ativar cadastro</message>
 	<message key="user.login.activated">Seu cadastro foi ativado, permitindo o acesso ao sistema com os dados informados no momento do cadastro.</message>
 	<message key="user.login.changePasswordInstructions"><![CDATA[Uma nova senha deve ser definida antes de cadastrar-se no sistema.<br /><br />Digite seu login e senhas atual e nova para alterar a senha de acesso à conta.]]></message>
@@ -155,4 +155,12 @@
 	<message key="user.apiKey.generate">Gerar nova chave da API</message>
 	<message key="user.apiKey.generateWarning">Gerar uma nova chave da API irá invalidar qualquer chave já existente para este usuário.</message>
 	<message key="user.apiKey.secretRequired">Antes de gerar uma chave da API, você deve definir um código no arquivo de configuração ("api_key_secret")</message>
+	<message key="user.authorization.assignedStageRoleBasedAccessDenied">Você não está designado a esta submissão com um papel que permita o acesso a esta operação.</message>
+	<message key="user.profile.form.privacyConsentRequired">Você deve concordar com os termos da declaração de privacidade.</message>
+	<message key="user.register.form.privacyConsent"><![CDATA[Sim, concordo em ter meus dados coletados e armazenados de acordo com a  <a href="{$privacyUrl}" target="_blank">Declaração de Privacidade</a>.]]></message>
+	<message key="user.register.form.emailConsent">Sim, eu desejo ser notificado sobre novas publicações e anúncios.</message>
+	<message key="user.privacyLink"><![CDATA[Seus dados são armazenados de acordo com a nossa <a href="{$privacyUrl}" target="_blank">declaração de privacidade</a>.]]></message>
+	<message key="user.authorization.invalidReviewAssignment">Você não tem permissão para acessar esta atribuição de avaliação.</message>
+	<message key="user.authorization.submissionQuery">Você não tem permissão para acessar esta discussão.</message>
+	<message key="user.gossip.description">Registre notas sobre esse avaliador que você gostaria que estivessem visíveis a outros administradores, gerentes e todos os editores. As notas estarão visíveis para futuras designações.</message>
 </locale>

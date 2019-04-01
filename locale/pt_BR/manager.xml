@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/manager.xml
   *
-  * Copyright (c) 2014-2019 Simon Fraser University
-  * Copyright (c) 2000-2019 John Willinsky
+  * Copyright (c) 2014-2018 Simon Fraser University
+  * Copyright (c) 2000-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Locale information: https://pkp.sfu.ca/wiki/index.php?title=OMP:_Portuguese_(pt_BR)
   * Localization strings.
@@ -277,8 +277,7 @@ Há casos em que uma única estatística de uso devem ser utilizada, por exemplo
 	<message key="manager.plugins.pluginGallery.certifications.reviewed">Revisado</message>
 	<message key="manager.plugins.pluginGallery.certifications.partner">Parceiro</message>
 	<message key="manager.plugins.pluginGallery.maintainer">Mantenedor</message>
-	<message key="manager.plugins.pluginGallery.version">Versão: {$version}</message>
-	<message key="manager.plugins.pluginGallery.date">Data de lançamento: {$date}</message>
+	<message key="manager.plugins.pluginGallery.version">Versão: {$version} lançada em {$date}</message>
 	<message key="manager.plugins.pluginGallery.homepage">Homepage</message>
 	<message key="manager.plugins.pluginGallery.summary">Resumo</message>
 	<message key="manager.plugins.pluginGallery.status">Status</message>
@@ -388,8 +387,8 @@ Há casos em que uma única estatística de uso devem ser utilizada, por exemplo
 	<message key="manager.setup.reviewerCompetingInterestsRequired.description">Declaração de Conflito de Interesses para Avaliadores</message>
 	<message key="manager.setup.competingInterests.required">Requisitar uma declaração de Conflito de Interesses durante a avaliação por pares.</message>
 
-	<message key="manager.setup.includeCopyrightStatement">Display the copyright statement with content (advisable for asserting an author-held copyright).</message>
-	<message key="manager.setup.includeLicense">Display the license with published work.</message>
+	<message key="manager.setup.includeCopyrightStatement">Exibir a declaração de direitos autorais com conteúdo (aconselhável para declarar direitos autorais mantido pelo autor).</message>
+	<message key="manager.setup.includeLicense">Exibir a licença com o trabalho publicado.</message>
 	<message key="manager.setup.licenseURLDescription">Informe a URL da página da licença, se disponível.</message>
 
 	<message key="manager.setup.metadata.submission">Formulário de Submissão</message>
@@ -461,60 +460,69 @@ Há casos em que uma única estatística de uso devem ser utilizada, por exemplo
 	<message key="plugins.importexport.common.error.temporaryFileFailed">Arquivo temporário {$dest} não pode ser criado por {$source}</message>
 	<message key="plugins.importexport.common.error.filesizeMismatch">O tamanho de arquivo informado "{$expected}" e o tamanho real  "{$actual}" não conferem</message>
 	<message key="plugins.importexport.native.error.submissionFileImportFailed">O arquivo da submissão não pode ser importado</message>
-
-	<!-- Navigation Menus -->
+	<message key="manager.people.existingUserRequired">Um usuário existente deve ser inserido.</message>
+	<message key="manager.setup.privacyStatement.description">Esta declaração aparecerá durante o registro do usuário, submissão do autor e na página de Privacidade disponível publicamente. Em algumas jurisdições, você é legalmente obrigado a divulgar como você lida com os dados do usuário nesta política de privacidade.</message>
+	<message key="manager.setup.searchEngineIndexing.sitemap">Mapa do site</message>
+	<message key="manager.setup.searchEngineIndexing.sitemapDescription"><![CDATA[Um mapa do site (Sitemap) em XML está disponível para submissão a mecanismos de busca em <a href="{$path}" target="_blank">{$path}</a>]]></message>
+	<message key="settings.roles.recommendOnly">Esse papel pode recomendar uma decisão da avaliação e exigirá que um editor autorizado registre uma decisão final.</message>
+	<message key="settings.libraryFiles.public.viewInstructions"><![CDATA[<p>Esta arquivo da biblioteca pode ser acessado para download, se habilitado o "Acesso público", em: <blockquote>{$downloadUrl}</blockquote></p>]]></message>
+	<message key="settings.libraryFiles.public.selectLibraryFiles">Selecione Arquivos da Biblioteca para anexar</message>
+	<message key="manager.setup.genres.key">Chave</message>
+	<message key="manager.setup.genres.key.description">Um identificador simbólico curto opcional para este gênero.</message>
+	<message key="manager.setup.genres.key.exists">Esta chave já existe.</message>
+	<message key="manager.setup.genres.key.alphaNumeric">A chave pode conter apenas caracteres alfanuméricos, sublinhados e hífens, e deve começar e terminar com um caractere alfanumérico.</message>
 	<message key="manager.navigationMenus.form.title">Título</message>
 	<message key="manager.navigationMenus.form.path">Caminho</message>
-	<message key="manager.navigationMenus">Menus de navegação</message>
-	<message key="manager.navigationMenus.form.viewInstructions"><![CDATA[<p>Esta págima será acessível em: <blockquote>{$pagesPath}</blockquote>...onde %PATH% é o caminho digitado acima. <strong>Nota:</strong> Duas páginas não podem possuir o mesmo caminho. O uso de caminhos já utilizados no sistema pode causar perda de acesso a funções importantes.</p>]]></message>
-	<message key="manager.navigationMenus.form.content">Conteúdo</message>
-	<message key="manager.navigationMenus.form.pathRegEx">O campo caminho deve conter apenas caracteres alfanuméricos, além de '.', '/', '-', e '_'.</message>
-	<message key="manager.navigationMenus.form.duplicatePath"> Este caminho já existe para outro item do menu de navegação.</message>
-	<message key="manager.navigationMenus.form.duplicateTitles"> Este título já existe para outro menu de navegação.</message>
-	<message key="manager.navigationMenus.form.titleRequired">O título é obrigatório</message>
-	<message key="manager.navigationMenuItems">Itens do menu de navegação</message>
-	<message key="manager.navigationMenus.assignedMenuItems">Itens associados ao menu</message>
-	<message key="manager.navigationMenus.unassignedMenuItems">Itens não associados ao menu</message>
-	<message key="manager.navigationMenus.form.navigationMenuArea">Áreas de navegação do Tema ativo</message>
-	<message key="manager.navigationMenus.form.navigationMenuAreaMessage">Selecionar uma área de navegação</message>
-	<message key="manager.navigationMenus.form.menuAssigned">Um menu de navegação já está associado a esta área.</message>
-
+	<message key="manager.navigationMenus">Menus de Navegação</message>
+	<message key="manager.navigationMenus.form.viewInstructions"><![CDATA[<p> Esta página estará acessível em: <blockquote>{$pagesPath} </blockquote> .. onde %PATH% é o caminho digitado acima. <strong> Nota: </ strong> Duas páginas não podem ter o mesmo caminho. A utilização de caminhos já em uso no sistema pode causar a perda de acesso a funções importantes.</p>]]></message>
+	<message key="manager.navigationMenus.form.content">Atual</message>
+	<message key="manager.navigationMenus.form.pathRegEx">O campo Caminho deve conter apenas caracteres alfanuméricos, além de '.', '/', '-' e '_'.</message>
+	<message key="manager.navigationMenus.form.duplicatePath">Este caminho já existe em outro item do menu de navegação.</message>
+	<message key="manager.navigationMenus.form.duplicateTitles">Este título já existe em outro menu de navegação.</message>
+	<message key="manager.navigationMenus.form.titleRequired">O título é requerido</message>
+	<message key="manager.navigationMenuItems">Itens do Menu de Navegação</message>
+	<message key="manager.navigationMenus.assignedMenuItems">Vincular Itens do Menu</message>
+	<message key="manager.navigationMenus.unassignedMenuItems">Desvincular Itens do Menu</message>
+	<message key="manager.navigationMenus.form.navigationMenuArea">Áreas ativas no Tema para Menus de Navegação</message>
+	<message key="manager.navigationMenus.form.navigationMenuAreaMessage">Selecione uma área de navegação</message>
+	<message key="manager.navigationMenus.form.menuAssigned">Um menu de navegação já foi atribuído a esta área.</message>
 	<message key="manager.navigationMenus.form.url">URL</message>
 	<message key="manager.navigationMenus.form.customUrlError">Uma URL deve ser informada</message>
 
 	<message key="manager.navigationMenus.form.conditionalDisplay">Saiba mais sobre quando esse item de menu será mostrado ou ocultado.</message>
-	<message key="manager.navigationMenus.form.submenuWarning"> Quando um item de menu abre um submenu, esse link poderá não funcionar em todos os dispositivos. Por exemplo, se existe um item "Sobre" que abre um submenu com os itens "Contato" e "Equipe Editorial", o link "Sobre" pode não ser acessivel em todos os dispositivos. No menu padrão, isto é resolvido criando um segundo item de menu, "Sobre a Revista", que aparece no submenu.</message>
+	<message key="manager.navigationMenus.form.submenuWarning"> Quando um item de menu abre um submenu, esse link poderá não funcionar em todos os dispositivos. Por exemplo, se existe um item "Sobre" que abre um submenu com os itens "Contato" e "Equipe Editorial", o link "Sobre" pode não ser acessível em todos os dispositivos. No menu padrão, isto é resolvido criando um segundo item de menu, "Sobre a Revista", que aparece no submenu.</message>
 
 	<message key="manager.navigationMenus.form.navigationMenuItemType">Tipo de Menu de Navegação</message>
-	<message key="manager.navigationMenus.form.navigationMenuItemTypeMessage">Selecionar um Tipo Navegação de Menu ou customize ou criar o seu próprio</message>
-	<message key="manager.navigationMenus.customPage">Página personalizada</message>
-	<message key="manager.navigationMenus.customPage.description">Criar uma página customizada em seu site e colocar seu link a partir de um menu de navegação.</message>
+	<message key="manager.navigationMenus.form.navigationMenuItemTypeMessage">Selecione o tipo do Menu de Navegação ou escolha Personalizado para fazer o seu próprio.</message>
+	<message key="manager.navigationMenus.customPage">Página Personalizada</message>
+	<message key="manager.navigationMenus.customPage.description">Crie uma página personalizada em seu site e crie um link para ela em um menu de navegação.</message>
 	<message key="manager.navigationMenus.remoteUrl">URL remota</message>
-	<message key="manager.navigationMenus.remoteUrl.description">Link para qualquer URL em outro site, como https://pkp.sfu.ca.</message>
-	<message key="manager.navigationMenus.about.description">Link para uma página exibindo o conteúdo do Sobre a Revista em Configurações > Revista</message>
-	<message key="manager.navigationMenus.about.conditionalWarning">Este link será exibido se você tiver preenchido a seção Sobre a Revista em Configurações > Revista. </message>
-	<message key="manager.navigationMenus.editorialTeam.description">Link exibindo o conteúdo da página Equipe Editorial em Configurações > Revista.</message>
-	<message key="manager.navigationMenus.editorialTeam.conditionalWarning">Este link apenas será exibido se você tiver preenchido a seção Equipe Editorial em Configurações > Revista.</message>
-	<message key="manager.navigationMenus.submissions.description">Link para a página exibindo as instruções de submissão.</message>
-	<message key="manager.navigationMenus.current.description">Link para a sua edição atual.</message>
-	<message key="manager.navigationMenus.archives.description">Link para sua edição anteriore.</message>
-	<message key="manager.navigationMenus.announcements.description">Link para a página exibindo suas notícias.</message>
-	<message key="manager.navigationMenus.announcements.conditionalWarning">Este link apenas será exibido se você tiver habilitado a aba notícias em Configurações > Website.</message>
-	<message key="manager.navigationMenus.login.description">Link para a página de login de usuário.</message>
-	<message key="manager.navigationMenus.register.description">Link para a página de registro de usuário.</message>
-	<message key="manager.navigationMenus.dashboard.description">Link para o painel editorial.</message>
-	<message key="manager.navigationMenus.profile.description">Link para a página de perfil de usuário.</message>
-	<message key="manager.navigationMenus.administration.description">Link para as ferramentas de administração geral do site.</message>
-	<message key="manager.navigationMenus.administration.conditionalWarning">Este link será exibido apenas para usuários administradores.</message>
-	<message key="manager.navigationMenus.logOut.description">Um link que irá finalizar a sessão do usuário.</message>
-	<message key="manager.navigationMenus.loggedOut.conditionalWarning">Este link apenas será exibido quando o visitante estiver logado.</message>
-	<message key="manager.navigationMenus.loggedIn.conditionalWarning">Este link apenas será exibido quando o visitante estiver deslogado.</message>
-	<message key="manager.navigationMenus.contact.description">Link para uma página com suas informações de contato.</message>
-	<message key="manager.navigationMenus.contact.conditionalWarning">Este link apenas será exibido se você tiver preenchido a informação de Contato em Configurações > Contato.</message>
-	<message key="manager.navigationMenus.form.typeMissing">Por favor selecionar um tipo de menu de navegação.</message>
-	<message key="manager.navigationMenus.subscriptions.conditionalWarning">Este link apenas será exibido se a opção de pagamentos estiver habilitada em Configurações > Distribuição > Pagamentos.</message>
-	<message key="manager.navigationMenus.mySubscriptions.conditionalWarning">Este link apenas será exibido se o visitante estiver logado, os pagamentos estiverem habilitados Configurações > Distribuição > Pagamentos e as assinaturas estiverem obrigatórias em Configurações > Distribuição > Acesso.</message>
+	<message key="manager.navigationMenus.remoteUrl.description">Link para uma URL em outro site, como https://pkp.sfu.ca.</message>
+	<message key="manager.navigationMenus.about.description"><![CDATA[Link para uma página que exibe o conteúdo Sobre a revista em Configurações > Revista]]></message>
+	<message key="manager.navigationMenus.about.conditionalWarning"><![CDATA[Este link só será exibido se você tiver preenchido a seção Sobre a revista em Configurações > Revista.]]></message>
+	<message key="manager.navigationMenus.editorialTeam.description"><![CDATA[Link para uma página que exibe o conteúdo do Expediente em Configurações > revista.]]></message>
+	<message key="manager.navigationMenus.editorialTeam.conditionalWarning"><![CDATA[Este link será exibido apenas se você tiver preenchido a seção Equipe Editorial em Configurações > Revista.]]></message>
+	<message key="manager.navigationMenus.submissions.description">Link para a página exibindo as instruções para submissão.</message>
+	<message key="manager.navigationMenus.current.description">Link para edição atual.</message>
+	<message key="manager.navigationMenus.archives.description">Link para as edições publicadas.</message>
+	<message key="manager.navigationMenus.announcements.description">Link para página exibindo seus anúncios.</message>
+	<message key="manager.navigationMenus.announcements.conditionalWarning"><![CDATA[Este link só será exibido se você tiver habilitado os anúncios em Configurações > Website]]></message>
+	<message key="manager.navigationMenus.login.description">Link para página de login de usuários.</message>
+	<message key="manager.navigationMenus.register.description">Link para a página de cadastro.</message>
+	<message key="manager.navigationMenus.dashboard.description">Link para o Painel Editorial.</message>
+	<message key="manager.navigationMenus.profile.description">Link para a página do perfil do usuário.</message>
+	<message key="manager.navigationMenus.administration.description">Link para ferramenta de administração de todo site / Portal.</message>
+	<message key="manager.navigationMenus.administration.conditionalWarning">Este link será exibido apenas aos administradores.</message>
+	<message key="manager.navigationMenus.logOut.description">Um link que irá finalizar a sessão do usuário (logout).</message>
+	<message key="manager.navigationMenus.loggedOut.conditionalWarning">Este link será exibido apenas quando o visitante estiver efetuado login.</message>
+	<message key="manager.navigationMenus.loggedIn.conditionalWarning">Este link será exibido apenas quando o visitante não tiver efetuado login.</message>
+	<message key="manager.navigationMenus.contact.description">Link para a página com suas informações de contato.</message>
+	<message key="manager.navigationMenus.contact.conditionalWarning"><![CDATA[Este link será exibido apenas se você tiver preenchido as informações de contato em Configurações > Contato.]]></message>
+	<message key="manager.navigationMenus.form.typeMissing">Selecione um tipo de menu de navegação.</message>
+	<message key="manager.navigationMenus.subscriptions.conditionalWarning"><![CDATA[Este link será exibido apenas se os pagamentos estiverem habilitados em Configurações > Distribuição > Pagamentos.]]></message>
+	<message key="manager.navigationMenus.mySubscriptions.conditionalWarning"><![CDATA[Esse link será exibido apenas se o visitante estiver conectado (logado), os pagamentos estivem habilitados em Configurações> Distribuição > Pagamentos e as assinaturas estiverem marcadas como requeridas em Configurações > Distribuição > Acesso.]]></message>
 	<message key="manager.navigationMenus.search.description">Link para a página de busca.</message>
-	<message key="manager.navigationMenus.privacyStatement.description">Link para a página mostrando sua declaração de privacidade.</message>
-	<message key="manager.navigationMenus.privacyStatement.conditionalWarning">Este link apenas será exibido se você submeteu uma declaração de privacidade em Configurações > Fluxo de Trabalho > Subimissão.</message>
+	<message key="manager.navigationMenus.privacyStatement.description">Link para a página que exibe sua declaração de privacidade.</message>
+	<message key="manager.navigationMenus.privacyStatement.conditionalWarning"><![CDATA[Este link será exibido somente se você submeteu uma declaração de privacidade em Configurações > Fluxo de Trabalho > Submissão.]]></message>
+	<message key="plugins.importexport.common.error.duplicateRevisionForSubmission">A revisão "{$revisionId}" para o arquivo de submissão "{$fileId}" criaria um registro duplicado</message>
 </locale>

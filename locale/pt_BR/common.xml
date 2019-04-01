@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/common.xml
   *
-  * Copyright (c) 2014-2019 Simon Fraser University
-  * Copyright (c) 2000-2019 John Willinsky
+  * Copyright (c) 2014-2018 Simon Fraser University
+  * Copyright (c) 2000-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Locale information: https://pkp.sfu.ca/wiki/index.php?title=OMP:_Portuguese_(pt_BR)
   * Localization strings for the pt_BR (Português (Brasil)) locale.
@@ -494,7 +494,7 @@
 	<message key="submission.task.responseDueDate">Prazo de resposta</message>
 	<message key="navigation.goBack">Voltar</message>
 
-	<message key="notification.addedReviewer">Avaliador adicionado.</message>
+	<message key="notification.addedReviewer">{$reviewerName} foi designado como avaliador desta submissão e foi enviada uma notificação por email.</message>
 	<message key="notification.removedReviewer">Avaliador removido.</message>
 	<message key="notification.addedStageParticipant">Usuário adicionado como participante do estágio.</message>
 	<message key="notification.type.newAnnouncement">Nova notícia.</message>
@@ -546,4 +546,31 @@
 	<message key="notification.addedReviewerNoEmail">{$reviewerName} foi designado para avaliar essa submissão e não recebeu uma notificação por email.</message>
 	<message key="common.captcha.error.missing-input-response">Você deve completar a checagem de validação para evitar o envio de SPAM.</message>
 	<message key="common.captcha.error.invalid-input-response">Informe o código como aparece na imagem.</message>
+	<message key="common.listSeparator">,</message>
+	<message key="stageParticipants.notify.startDiscussion">Iniciar discussão</message>
+	<message key="stageParticipants.notify.startDiscussion.description">Iniciar uma discussão entre você e {$userFullName}.</message>
+	<message key="stageParticipants.recommendOnly">Este  participante só poderá recomendar uma decisão editorial e irá precisar de uma autorização do editor para registraras decisões editoriais.</message>
+	<message key="notification.editedNavigationMenuItem">O menu de navegação foi atualizado com êxito</message>
+	<message key="notification.removedNavigationMenuItem">O item do menu foi removido com êxito</message>
+	<message key="notification.addedNavigationMenuItem">O item do menu foi adicionado com êxito</message>
+	<message key="notification.addedNavigationMenu">Menu de navegação adicionado com êxito</message>
+	<message key="notification.editedNavigationMenu">Menu de navegação atualizado com êxito</message>
+	<message key="notification.removedNavigationMenu">Menu de navegação removido com sucesso</message>
+	<message key="list.viewMore">Mostrar mais detalhes sobre {$name}</message>
+	<message key="list.viewLess">Esconder os detalhes expandidos sobre {$name}</message>
+	<message key="common.deleting">Exluindo</message>
+	<message key="common.filterAdd">Adicionar filtro: {$filterTitle}</message>
+	<message key="common.from">de</message>
+	<message key="common.until">Até</message>
+	<message key="common.lessThan">menor que {$value}</message>
+	<message key="common.moreThan">maior que {$value}</message>
+	<message key="common.pagination">{$start}-{$end} de {$total}</message>
+	<message key="common.pagination.label">Páginas adicionais</message>
+	<message key="common.saving">Salvando</message>
+	<message key="common.publicAccess">Acesso Público</message>
+	<message key="stageParticipants.options">Privilégios de atribuição</message>
+	<message key="notification.reviewerThankedEmail">Obrigado pelo email enviado ao avaliador.</message>
+	<message key="notification.email">Não me enviei um e-mail ára estes tipos de notificações.</message>
+	<message key="notification.sendNotificationConfirmation">Enviar notificação por email para todos usuários registrados</message>
+	<message key="notification.type.reviewAssignmentUpdated">Designação de avaliação atualizada.</message>
 </locale>
